@@ -27,3 +27,7 @@ nav ul li {
     background: #212Ea0;
     transition: .5s;
 }
+
+/* media query */
+
+@media (max-width: 100px) {}
