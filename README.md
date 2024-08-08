@@ -22,7 +22,7 @@ To get started with the project, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone <your-github-repo-link>
+   git clone git@github.com:Manglam11/Edusity.git
 
    ```
 
