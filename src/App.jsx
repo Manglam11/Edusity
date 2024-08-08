@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
@@ -9,8 +9,10 @@ import Campus from "./components/Campus/Campus";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
 
 const App = () => {
+    const [playState, setPlayState] = useState(false);
     return (
         <div>
             <Navbar />
@@ -18,7 +20,7 @@ const App = () => {
             <div className="container">
                 <Title subTitle="Our PROGRAM" title="What We Offer" />
                 <Programs />
-                <About />
+                <About setPlayState={setPlayState} />
                 <Title subTitle="Gallary" title="Campus Photos" />
                 <Campus />
                 <Title subTitle="Testimonials" title="What Student Says" />
@@ -27,6 +29,7 @@ const App = () => {
                 <Contact />
                 <Footer />
             </div>
+            <VideoPlayer playState={playState} setPlayState={setPlayState} />
         </div>
     );
 };
