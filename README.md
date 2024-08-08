@@ -132,4 +132,4 @@ For more information, you can reach out at [manglamdubey11@gmail.com](mailto:you
 
 ## Live Preview
 
-Check out the live version of the website [here](http://live-preview-link.com).
+Check out the live version of the website [here](https://manglam11.github.io/Edusity/).
